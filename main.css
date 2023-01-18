@@ -8,13 +8,16 @@ img {
     max-width: 400px;
 }
 
+a {
+    color: black;
+    background: #fcf62e;
+}
 h1 {
     background: #fcf62e;
     color: black;
 }
 
 h2 {
-    background: yellow;
     color: black;
 }
 
