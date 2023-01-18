@@ -1,0 +1,30 @@
+body {
+    background: #efefe4;
+    text-align: center;
+}
+
+img {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+h1 {
+    background: #fcf62e;
+    color: black;
+}
+
+h2 {
+    background: yellow;
+    color: black;
+}
+
+p {
+    background: #7c9ff7;
+    color: #fff;
+}
+
+li {
+    background: #e06666;
+    color: #fff;
+}
+
