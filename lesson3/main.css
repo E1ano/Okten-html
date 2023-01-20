@@ -1,0 +1,252 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*---------NULL STYLES-----------*/
+
+/*FIRST TASK*--------------------/
+
+/*Header*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header{
+    background: lightseagreen;
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__logo {
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 150px;
+    background: #22345d;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header__logo:hover {
+    background: coral;
+}
+
+.header__burger-menu {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #22345d;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header__burger-menu span {
+    position: absolute;
+    left: 10px;
+    top: 24px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.header__burger-menu::before,
+.header__burger-menu::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+.header__burger-menu::before {
+    top: 17px;
+}
+
+.header__burger-menu::after {
+    bottom: 17px;
+}
+
+.header__burger-menu.active::before {
+    transform: rotate(45deg);
+    top: 24px;
+}
+
+.header__burger-menu.active::after {
+    transform: rotate(-45deg);
+    bottom: 24px;
+}
+
+.header__burger-menu.active span {
+    transform: scale(0);
+}
+
+.header__burger-menu.active {
+    background: coral;
+}
+
+.header__search {
+    margin-right: 20px;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #22345d;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header__search:hover {
+    background: coral;
+    transform: translate(0,-5px);
+}
+
+.header__search span {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2.5px solid #fff;
+}
+
+.header__search span::after {
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: -4px;
+    right: -9px;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background: #fff;
+}
+
+/*Main*/
+.main {
+    background: #22345d;
+    position: relative;
+    min-height: 400px;
+}
+
+.main__items {
+    position: absolute;
+    left: 33.333%;
+    bottom: -75px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.main__item {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background: coral;
+
+}
+
+/*Footer*/
+.footer {
+    background: lightseagreen;
+    min-height: 194px;
+    margin-bottom: 100px;
+}
+
+/*SECOND TASK*--------------------/*/
+
+.cards__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 80px;
+    column-gap: 20px;
+}
+
+.cards__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 1 33.33333%;
+
+    border: 2px solid darkgray;
+    padding: 65px 10px 50px;
+}
+
+h2 {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: dimgrey;
+    text-align: center;
+}
+
+.cards__button a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cards__button a:hover {
+    background: coral;
+    color: #fff;
+    border: none;
+}
+
+.cards__icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkgray;
+    border-radius: 50%;
+    top: -60px;
+    background: #fff;
+}
+
+.cards__icon img {
+    height: 50px;
+    width: 50px;
+}
+
