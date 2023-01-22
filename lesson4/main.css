@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+/*part 1 styles*/
+.adaptive__top,
+.adaptive__left-block,
+.adaptive__right-block {
+    background: rgba(197, 197, 197, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adaptive__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.adaptive__top {
+    margin-bottom: 10px;
+    min-height: 35vh;
+}
+
+.adaptive__bottom {
+    display: flex;
+    column-gap: 10px;
+}
+
+.adaptive__left-block {
+    width: 65%;
+    min-height: 60vh;
+}
+
+.adaptive__right-block {
+    width: 35%;
+    min-height: 60vh;
+}
+
+/*adaptive styles for part 1*/
+
+@media screen and (max-width: 992px) {
+    .adaptive__wrapper {
+        row-gap: 30px;
+    }
+
+    .adaptive__bottom {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .adaptive__top,
+    .adaptive__left-block,
+    .adaptive__right-block {
+        border-radius: 10px;
+    }
+
+    .adaptive__top {
+        min-height: 15vh;
+
+    }
+
+    .adaptive__left-block {
+        width: 100%;
+        min-height: 65vh;
+    }
+
+    .adaptive__right-block {
+        width: 100%;
+        min-height: 15vh;
+    }
+}
+
+/*part 2 styles*/
+
+.box__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.box__top,
+.box__inner-top,
+.box__inner-item,
+.box__bottom-right{
+    background: rgba(197, 197, 197, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__bottom,
+.box__inner-bottom{
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.box__bottom-right {
+    min-height: 400px;
+    width: 20%;
+}
+
+.box__bottom-left {
+    width: 80%;
+    column-gap: 10px;
+}
+
+.box__top,
+.box__inner-top,
+.box__inner-item {
+    min-height: 200px;
+}
+
+.box__inner-top {
+    margin-bottom: 10px;
+}
+
+.box__inner-item {
+    width: 33.333%;
+}
+
+/*adaptive styles for part 2*/
+@media screen and (max-width: 992px) {
+    .box__bottom {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .box__wrapper{
+        row-gap: 30px;
+    }
+
+    .box__inner-top {
+        margin-bottom: 30px;
+    }
+
+    .box__inner-bottom {
+        column-gap: 30px;
+        justify-content: space-between;
+    }
+
+    .box__inner-top,
+    .box__bottom-left,
+    .box__bottom-right{
+        width: 100%;
+    }
+
+    .box__top,
+    .box__bottom-right{
+        min-height: 100px;
+    }
+
+    .box__top,
+    .box__inner-top,
+    .box__inner-item,
+    .box__bottom-right {
+        border-radius: 10px;
+    }
+}
+
+
