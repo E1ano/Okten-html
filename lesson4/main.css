@@ -161,4 +161,140 @@ body {
     }
 }
 
+/*part 3 styles*/
+.additional__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.header-add {
+    display: flex;
+    column-gap: 10px;
+}
+
+.header-add__logo {
+    flex: 0 1 20%;
+    min-height: 80px;
+}
+
+.header-add__header {
+    flex: 0 1 80%;
+    min-height: 80px;
+}
+
+.main-add {
+    display: flex;
+    column-gap: 10px;
+}
+
+.main-add__left {
+    display: flex;
+    flex: 0 1 20%;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main-add__left-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.nav {
+    min-height: 330px;
+}
+
+.store-locator {
+    min-height: 80px;
+}
+
+.tools {
+    min-height: 80px;
+}
+
+.main-add__right {
+    display: flex;
+    flex: 0 1 80%;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main-add__right-top {
+    display: flex;
+    column-gap: 10px;
+}
+
+.bath-section-intro {
+    flex: 0 1 66.666%;
+    min-height: 150px;
+}
+
+.ad {
+    flex: 0 1 33.333%;
+    min-height: 150px;
+}
+
+.main-add__right-bottom {
+    display: flex;
+    column-gap: 10px;
+}
+
+.type-of-baths {
+    flex: 0 1 66.666%;
+    min-height: 350px;
+}
+
+.related-products {
+    flex: 0 1 33.333%;
+    min-height: 350px;
+}
+
+.footer-add {
+    flex: 0 1 100%;
+    min-height: 80px;
+}
+
+.header-add__logo,
+.header-add__header,
+.nav, .store-locator,
+.tools, .bath-section-intro,
+.ad, .type-of-baths,
+.related-products, .footer-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #202023FF;
+}
+
+/*adaptive styles for part 3*/
+@media screen and (max-width: 992px) {
+    .main-add {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .main-add__left {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .main-add__left-bottom {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .store-locator, .tools {
+        flex: 0 1 50%;
+    }
+
+    .main-add__right-bottom {
+        flex-direction: column;
+        row-gap: 10px;
+        flex: 0 1 100%;
+    }
+}
+
 
